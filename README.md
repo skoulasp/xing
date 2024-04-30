@@ -27,4 +27,4 @@ This theme is provided as-is, without any warranty or support. It is not recomme
 
 ## License
 
-The Xing WordPress theme is released under the [MIT License](LICENSE).
+The Xing WordPress theme is released under the [MIT License](LICENSE.md).
