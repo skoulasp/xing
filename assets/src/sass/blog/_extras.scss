@@ -1,0 +1,23 @@
+// /* Style tooltips */
+// [title] {
+//     position: relative;
+// }
+
+// [title]::before {
+//     content: attr(title);
+//     position: absolute;
+//     background-color: #333; /* Dark grey background color */
+//     color: #fff; /* White text color */
+//     padding: 10px; /* Increased padding */
+//     border-radius: 5px; /* Rounded corners */
+//     font-size: 14px; /* Increased font size */
+//     white-space: nowrap;
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: opacity 0.2s, visibility 0.2s;
+// }
+
+// [title]:hover::before {
+//     background-color: rgb(36, 36, 36);
+//     color: #fff;
+// }

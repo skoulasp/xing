@@ -1,0 +1,56 @@
+body.error404 {
+    main {
+        color: #fff;
+        background-image: linear-gradient(
+                5deg,
+                hsla(329deg, 35%, 50%, 0.7) 0%,
+                hsla(330deg, 37%, 49%, 0.7) 1%,
+                hsla(331deg, 38%, 49%, 0.7) 3%,
+                hsla(332deg, 40%, 48%, 0.7) 6%,
+                hsla(333deg, 42%, 48%, 0.7) 11%,
+                hsla(334deg, 43%, 47%, 0.7) 18%,
+                hsla(334deg, 44%, 46%, 0.7) 28%,
+                hsla(335deg, 46%, 46%, 0.7) 43%,
+                hsla(336deg, 47%, 45%, 0.7) 67%,
+                hsla(337deg, 49%, 45%, 0.7) 100%
+            ),
+            url("../img/error.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        form {
+            justify-content: center !important;
+            align-self: center;
+            input,
+            label {
+                display: block !important;
+            }
+            span.dashicons-search {
+                display: none !important;
+            }
+            span.dashicons-search::before {
+                display: none;
+            }
+        }
+        header.page-header h1 {
+            margin-top: 40px;
+            font-size: 5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        & > * {
+            margin-bottom: 20px;
+        }
+
+        div.page-content > p {
+            width: 100%;
+            margin-bottom: 30px;
+            display: inline-block;
+            font-size: 2rem;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+    }
+}

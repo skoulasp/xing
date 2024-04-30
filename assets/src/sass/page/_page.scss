@@ -1,0 +1,40 @@
+div.post-type-page:not(.search-results) > .type-page {
+    text-align: center;
+
+    h1 {
+        margin: 4rem 0;
+    }
+
+    div.entry-content {
+        margin: 4rem auto;
+        z-index: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr minmax(min-content, 135rem) 1fr 1fr;
+        grid-template-rows: auto;
+
+        :is(h2, figure, p, blockquote, .wp-block-buttons, .wp-block-button) {
+            grid-column: 3 / 4;
+        }
+
+        * {
+            grid-column: 3 / 4;
+        }
+
+        .alignfull {
+            grid-column: 1 / -1;
+        }
+
+        .alignwide {
+            grid-column: 2 / 5;
+        }
+
+        .type-page {
+            margin: 4rem auto;
+
+            & h1 {
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

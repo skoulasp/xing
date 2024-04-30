@@ -1,0 +1,34 @@
+const defaultConfig = require("@wordpress/scripts/config/webpack.config");
+const path = require("path");
+
+module.exports = {
+    ...defaultConfig,
+
+    output: {
+        path: BUILD_DIR, // Set the build directory as the output path
+    },
+
+    module: {
+        ...defaultConfig.module,
+        rules: [
+            ...defaultConfig.module.rules,
+            {
+                test: /\.(ttf|otf|eot|svg|woff(2)?|jpg|png)(\?[a-z0-9]+)?$/,
+                include: [IMG_DIR],
+                exclude: /node_modules/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "images/[name].[ext]", // Output path relative to the output directory (build)
+                        publicPath: "production" === process.env.NODE_ENV ? "../" : "../",
+                    },
+                },
+            },
+        ],
+    },
+
+    // Add the 'stats' configuration for detailed error information
+    stats: {
+        errorDetails: true,
+    },
+};

@@ -1,0 +1,42 @@
+h1.archive {
+    margin: 6rem 0;
+}
+
+body.archive {
+    background-color: #e9e4c3;
+    color: #fff;
+
+    header.page-header {
+        background-image: linear-gradient(
+                0deg,
+                hsla(52deg, 46%, 84%, 0.7) 0%,
+                hsla(51deg, 42%, 80%, 0.7) 0%,
+                hsla(51deg, 39%, 76%, 0.7) 1%,
+                hsla(51deg, 37%, 72%, 0.7) 4%,
+                hsla(50deg, 36%, 68%, 0.7) 9%,
+                hsla(50deg, 34%, 64%, 0.7) 19%,
+                hsla(50deg, 33%, 60%, 0.7) 40%,
+                hsla(51deg, 32%, 56%, 0.7) 71%,
+                hsla(51deg, 31%, 53%, 0.7) 87%,
+                hsla(51deg, 32%, 49%, 0.7) 95%,
+                hsla(51deg, 37%, 45%, 0.7) 98%,
+                hsla(52deg, 42%, 41%, 0.7) 100%,
+                hsla(52deg, 49%, 37%, 0.7) 100%
+            ),
+            url("../../build/img/archive.png");
+        background-size: cover;
+        height: calc(100dvh - 183px);
+        color: #f4f4f4;
+        font-size: 3.8rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            margin: 0;
+            padding: 10px 20px;
+            background-color: hsla(0, 0%, 0%, 0.4);
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

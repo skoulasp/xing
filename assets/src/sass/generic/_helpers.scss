@@ -1,0 +1,27 @@
+.navbar-stabilizer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.overflow-animation-fix {
+    overflow-y: hidden;
+}
+
+.width-0 {
+    width: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-stabilizer {
+        position: static;
+        transform: none;
+        margin: 0;
+    }
+    .width-0 {
+        width: 0;
+    }
+}

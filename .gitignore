@@ -1,0 +1,6 @@
+/assets/dist/*
+/assets/node_modules/*
+/assets/build/*
+/assets/package-lock.json
+/assets/webpack.config.js.123
+.vscode

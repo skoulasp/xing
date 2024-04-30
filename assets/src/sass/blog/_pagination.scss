@@ -1,0 +1,100 @@
+.pagination,
+.page-links {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    & a {
+        display: inline-block;
+        margin: 2rem;
+        text-decoration: none;
+        color: #b04072;
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;
+        border-radius: 50%;
+        border: 3px solid #b04072;
+        transition: 0.3s;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    & a:hover {
+        background-color: #b04072;
+        color: #fff;
+    }
+    & a:active {
+        transform: scale(0.95);
+        background-color: #b04072;
+        border: 3px solid #b04072;
+    }
+
+    & .current {
+        margin: 2rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: 50%;
+        background-color: #da0b68;
+        border: 3px solid #da0b68;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    & .current:hover {
+        cursor: not-allowed;
+    }
+
+    & .prev,
+    & .next {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    & .dots {
+        font-weight: 700;
+        font-size: 2rem;
+        color: #000;
+    }
+}
+
+.single-pagination {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.single-pagination {
+    display: flex;
+    justify-content: center;
+
+    .prev-link a,
+    .next-link a {
+        display: inline-block;
+        width: fit-content;
+        margin: 1.8rem;
+        text-decoration: none;
+        color: #b04072;
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 1.2rem 1.7rem;
+        border-radius: 10px;
+        border: 3px solid #b04072;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #b04072;
+            color: #fff;
+        }
+
+        &:active {
+            transform: scale(0.95);
+            background-color: #da0b68;
+            border: 3px solid #da0b68;
+        }
+    }
+}
+
+div.page-links {
+    font-size: 2rem;
+    font-weight: 500;
+}

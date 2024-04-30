@@ -1,0 +1,63 @@
+.site-header {
+    position: relative;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.site-header.sticky {
+    position: sticky;
+    top: -123px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    animation: slideIn 0.6s cubic-bezier(0, 0, 0.52, 1.04) forwards;
+    // &.admin-mode {
+    //     // .nav__layout {
+    //     //     position: relative;
+    //     //     background: #1799aa;
+    //     // }
+    // }
+}
+
+.site-branding {
+    height: 12.3rem;
+    padding: 4rem 2.5rem;
+    background: #067685;
+    color: rgb(232, 232, 232);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .custom-logo-link img {
+        max-height: 100px;
+        width: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(232, 232, 232);
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.5em;
+        flex: 1 1 auto;
+        justify-self: end;
+        text-align: end;
+        margin: 0 2rem;
+    }
+}
+
+.site-description {
+    &.site-description-animated {
+        animation: fadeOut 0.3s cubic-bezier(0.18, 0.56, 0.25, 0.54);
+        animation-fill-mode: forwards;
+    }
+    &.site-description-fadein {
+        animation: fadeIn 0.3s cubic-bezier(0.18, 0.56, 0.25, 0.54);
+        animation-delay: 0.3s;
+        animation-fill-mode: both;
+    }
+}

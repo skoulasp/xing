@@ -1,0 +1,57 @@
+.wp-block-image.alignfull {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.wp-block-button.alignright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wp-block-button.is-style-squared a {
+    border-radius: 0;
+}
+
+// .entry-content a {
+//     transition: all 0.3s;
+//     &:hover {
+//         color: #007686;
+//         box-shadow: inset 0 -2px 0 #007686;
+//     }
+//     &:active {
+//         color: #500086;
+//         box-shadow: inset 0 -2px 0 #500086;
+//     }
+// }
+
+blockquote {
+    background: #f4f1ff;
+    display: inline-block;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 1em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+p {
+    margin: 1em 0px;
+    text-align: left;
+    &.has-text-align-center {
+        text-align: center;
+    }
+    &.has-text-align-right {
+        text-align: right;
+    }
+}

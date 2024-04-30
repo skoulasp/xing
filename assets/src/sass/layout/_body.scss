@@ -1,0 +1,160 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #bdd7db;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: Helvetica, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+div.site {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 135rem) 1fr;
+    grid-template-rows: max-content minmax(max-content, 1fr) max-content;
+    min-height: 100%;
+
+    form.search-animated main {
+        display: none;
+    }
+}
+
+main {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    min-height: 100%;
+    transition: all 0.3s;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        z-index: 10;
+        animation: fadeIn 0.3s;
+        animation-fill-mode: backwards;
+        transition: all 0.3s;
+    }
+
+    &.dimm {
+        position: relative;
+
+        &::after {
+            display: inline-block;
+        }
+    }
+
+    &.reverse::after {
+        content: "";
+        animation: fadeOut 0.3s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
+}
+
+.container {
+    margin-top: 8rem;
+}
+
+.container-home {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 125rem) 1fr;
+    grid-template-rows: 1fr max-content max-content max-content;
+    align-items: center;
+
+    .post-grid-wrapper {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 6rem;
+        margin: 6rem 0;
+    }
+
+    .widget-area-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-self: baseline;
+        padding-top: 6rem;
+        position: sticky;
+        top: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .widget-area-right {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        align-self: baseline;
+        padding-top: 6rem;
+        position: sticky;
+        top: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .custom-widget-area {
+        justify-self: center;
+        align-self: center;
+        justify-items: center;
+        & > * {
+            margin: 0 auto;
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+.pagination {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.post-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    article:not(.has-post-thumbnail) {
+        margin-top: 8rem;
+    }
+}
+
+img {
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+span.edit-link {
+    margin-bottom: 50px;
+}
+
+.wp-block-calendar caption {
+    background-color: inherit;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.wp-block-calendar table:where(:not(.has-text-color)) td,
+.wp-block-calendar table:where(:not(.has-text-color)) th {
+    background-color: aquamarine;
+}
+.wp-block-calendar table:where(:not(.has-text-color)) td:has(a),
+.wp-block-calendar table:where(:not(.has-text-color)) th:has(a) {
+    background-color: rgb(190, 0, 0);
+}
+.wp-block-calendar table a {
+    text-decoration: none;
+    color: #fff;
+}
