@@ -2,24 +2,6 @@ body.search {
     background-color: #e3d5d8;
 
     header.page-header {
-        // background-image: linear-gradient(
-        //         180deg,
-        //         hsla(187deg, 91%, 27%, 0.7) 0%,
-        //         hsla(186deg, 96%, 29%, 0.7) 14%,
-        //         hsla(186deg, 100%, 30%, 0.7) 41%,
-        //         hsla(185deg, 100%, 32%, 0.7) 67%,
-        //         hsla(185deg, 100%, 34%, 0.7) 79%,
-        //         hsla(184deg, 100%, 35%, 0.7) 86%,
-        //         hsla(183deg, 100%, 37%, 0.7) 91%,
-        //         hsla(183deg, 100%, 39%, 0.7) 94%,
-        //         hsla(182deg, 100%, 41%, 0.7) 96%,
-        //         hsla(182deg, 100%, 43%, 0.7) 97%,
-        //         hsla(181deg, 100%, 44%, 0.7) 99%,
-        //         hsla(180deg, 96%, 47%, 0.7) 99%,
-        //         hsla(180deg, 91%, 51%, 0.7) 100%,
-        //         hsla(179deg, 100%, 55%, 0.7) 100%
-        //     ),
-
         background-image: linear-gradient(
                 0deg,
                 hsla(347deg, 20%, 86%, 0.7) 0%,
@@ -37,7 +19,7 @@ body.search {
                 hsla(339deg, 54%, 67%, 0.7) 100%,
                 hsla(338deg, 57%, 65%, 0.7) 100%
             ),
-            url("../../build/img/maginfier.jpg");
+            url("../img/maginfier.jpg");
 
         background-size: 10%;
         background-repeat: repeat;
